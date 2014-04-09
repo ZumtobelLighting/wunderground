@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Wunderground::Geolookup do
+describe Wunderground::Geolookup, :vcr do
   context 'zip code to location' do
     it 'can get lat,long from zip code' do
       geolookup = Wunderground::Geolookup.get(zip: "02125")
