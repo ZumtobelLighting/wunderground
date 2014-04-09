@@ -3,12 +3,21 @@ require 'faraday'
 require 'json'
 
 module Wunderground
-  class Geolookup
-    attr_reader :latitude, :longitude
+  class Geolookup < Hash
+    def latitude
+      self['lat']
+    end
 
-    def initialize(attributes)
-      @latitude = attributes["lat"]
-      @longitude = attributes["lon"]
+    def longitude
+      self['lon']
+    end
+
+    def method_missing(method, *args, &block)
+      if self[method.to_s]
+        self[method.to_s]
+      else
+        super
+      end
     end
 
     class << self
@@ -24,7 +33,7 @@ module Wunderground
         parsed_result = JSON.parse(result.body)
 
         if parsed_result and parsed_result["location"]
-          new(parsed_result["location"])
+          new.merge(parsed_result["location"])
         else 
           nil
         end

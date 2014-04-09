@@ -18,6 +18,8 @@ Or install it yourself as:
 
 ## Usage
 
+Define your api key in your environment: export wunderground_key="YOUR_API_KEY"
+
 geolookup = Wunderground::Geolookup.fetch(zip: 02125)  # or ip, city+state, country+city, airport, lat+lon
 geolookup.state => 'MA'
 geolookup.city => 'Dorchester'
