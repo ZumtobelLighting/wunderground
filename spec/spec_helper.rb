@@ -1,5 +1,6 @@
 require 'rspec'
 require 'vcr'
+require 'pry'
 require_relative '../lib/wunderground'
 
 

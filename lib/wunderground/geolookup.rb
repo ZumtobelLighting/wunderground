@@ -1,4 +1,3 @@
-require 'pry'
 require 'faraday'
 require 'json'
 
@@ -34,6 +33,12 @@ module Wunderground
 
         elsif args.keys.include?(:state) and args.keys.include?(:city)
           path += "#{args[:state]}/#{args[:city].gsub(' ', '_')}.json"
+
+        elsif args.keys.include?(:autoip)
+          path += "autoip.json"
+
+        elsif args.keys.include?(:airport)
+          path += "#{args[:airport]}.json"
         end
 
         result = connection.get(path)
@@ -44,6 +49,10 @@ module Wunderground
         else 
           nil
         end
+      end
+
+      def autoip
+        get(autoip: true)
       end
 
       protected

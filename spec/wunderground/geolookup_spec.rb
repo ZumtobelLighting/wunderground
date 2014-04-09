@@ -11,6 +11,19 @@ describe Wunderground::Geolookup, :vcr do
     expect(geolookup.longitude).to eql(-122.41825867)
   end
 
+  it 'can get city, state from ip' do
+    geolookup = Wunderground::Geolookup.autoip
+    expect(geolookup.city).to_not be_nil
+    expect(geolookup.state).to_not be_nil
+  end
+
+  it 'can get latitude, longitude from airport code' do
+    geolookup = Wunderground::Geolookup.get(airport: 'BOS')
+    expect(geolookup.latitude).to eql(42.36416626)
+    expect(geolookup.longitude).to eql(-71.00499725)
+    expect(geolookup.city).to eql("Logan International")
+  end
+
   it 'can get latitude, longitude from zip code' do
     geolookup = Wunderground::Geolookup.get(zip: "02210")
     expect(geolookup.latitude).to eql(42.34659958)
