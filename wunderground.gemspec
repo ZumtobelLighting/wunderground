@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Wunderground::VERSION
   spec.authors       = ["Richard Davis"]
   spec.email         = ["rdavis.bacs@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Weather Underground API Wrapper}
+  spec.summary       = %q{A ruby gem to easily access the Weather Undergroud API}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -25,4 +25,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec'
   spec.add_development_dependency 'webmock'
   spec.add_development_dependency 'vcr'
+  spec.add_development_dependency 'pry'
 end
