@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Richard Davis"]
   spec.email         = ["rdavis.bacs@gmail.com"]
   spec.description   = %q{Weather Underground API Wrapper}
-  spec.summary       = %q{A ruby gem to easily access the Weather Undergroud API}
+  spec.summary       = %q{A ruby gem to easily access the Weather Underground data}
   spec.homepage      = ""
   spec.license       = "MIT"
 

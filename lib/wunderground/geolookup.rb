@@ -1,6 +1,3 @@
-require 'faraday'
-require 'json'
-
 module Wunderground
   class Geolookup < Hash
     def latitude
@@ -46,9 +43,12 @@ module Wunderground
         elsif args.keys.include?(:pws)
           path += "pws:#{args[:pws]}.json"
 
+        else
+          raise "Geolookup.get() does not understand #{args}"
+
         end
 
-        result = connection.get(path)
+        result = Wunderground.connection.get(path)
         parsed_result = JSON.parse(result.body)
 
         if parsed_result and parsed_result["location"]
@@ -60,14 +60,6 @@ module Wunderground
 
       def autoip
         get(autoip: true)
-      end
-
-      protected
-      def connection
-        conn ||= Faraday.new(url: 'http://api.wunderground.com') do |faraday|
-          faraday.request(:url_encoded)
-          faraday.adapter(Faraday.default_adapter)
-        end
       end
     end
   end

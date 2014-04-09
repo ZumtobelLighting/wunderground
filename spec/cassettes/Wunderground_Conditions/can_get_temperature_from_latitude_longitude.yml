@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.wunderground.com/api/<WUNDERGROUND_API_KEY>/conditions/q/42.34659958,-71.04180145.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache/1.3.42 (Unix) PHP/5.3.2
+      X-Creationtime:
+      - '3.402'
+      Last-Modified:
+      - Wed, 09 Apr 2014 22:00:11 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Wed, 09 Apr 2014 22:00:15 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Wed, 09 Apr 2014 22:00:15 GMT
+      Content-Length:
+      - '2629'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - DT=1397080811:48981:365-dell-c14; path=/; expires=Fri, 01-Jan-2020 00:00:00
+        GMT; domain=.wunderground.com
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"conditions\": 1\n  }\n\t}\n  ,\t\"current_observation\":
+        {\n\t\t\"image\": {\n\t\t\"url\":\"http://icons-ak.wxug.com/graphics/wu2/logo_130x80.png\",\n\t\t\"title\":\"Weather
+        Underground\",\n\t\t\"link\":\"http://www.wunderground.com\"\n\t\t},\n\t\t\"display_location\":
+        {\n\t\t\"full\":\"Boston, MA\",\n\t\t\"city\":\"Boston\",\n\t\t\"state\":\"MA\",\n\t\t\"state_name\":\"Massachusetts\",\n\t\t\"country\":\"US\",\n\t\t\"country_iso3166\":\"US\",\n\t\t\"zip\":\"02126\",\n\t\t\"magic\":\"1\",\n\t\t\"wmo\":\"99999\",\n\t\t\"latitude\":\"42.340000\",\n\t\t\"longitude\":\"-71.040000\",\n\t\t\"elevation\":\"6.00000000\"\n\t\t},\n\t\t\"observation_location\":
+        {\n\t\t\"full\":\"South Boston, Boston, Massachusetts\",\n\t\t\"city\":\"South
+        Boston, Boston\",\n\t\t\"state\":\"Massachusetts\",\n\t\t\"country\":\"US\",\n\t\t\"country_iso3166\":\"US\",\n\t\t\"latitude\":\"42.343105\",\n\t\t\"longitude\":\"-71.058197\",\n\t\t\"elevation\":\"33
+        ft\"\n\t\t},\n\t\t\"estimated\": {\n\t\t},\n\t\t\"station_id\":\"KMABOSTO35\",\n\t\t\"observation_time\":\"Last
+        Updated on April 9, 5:45 PM EDT\",\n\t\t\"observation_time_rfc822\":\"Wed,
+        09 Apr 2014 17:45:36 -0400\",\n\t\t\"observation_epoch\":\"1397079936\",\n\t\t\"local_time_rfc822\":\"Wed,
+        09 Apr 2014 18:00:11 -0400\",\n\t\t\"local_epoch\":\"1397080811\",\n\t\t\"local_tz_short\":\"EDT\",\n\t\t\"local_tz_long\":\"America/New_York\",\n\t\t\"local_tz_offset\":\"-0400\",\n\t\t\"weather\":\"Partly
+        Cloudy\",\n\t\t\"temperature_string\":\"54.1 F (12.3 C)\",\n\t\t\"temp_f\":54.1,\n\t\t\"temp_c\":12.3,\n\t\t\"relative_humidity\":\"27%\",\n\t\t\"wind_string\":\"From
+        the WNW at 31.0 MPH Gusting to 34.0 MPH\",\n\t\t\"wind_dir\":\"WNW\",\n\t\t\"wind_degrees\":284,\n\t\t\"wind_mph\":31.0,\n\t\t\"wind_gust_mph\":\"34.0\",\n\t\t\"wind_kph\":49.9,\n\t\t\"wind_gust_kph\":\"54.7\",\n\t\t\"pressure_mb\":\"1005\",\n\t\t\"pressure_in\":\"29.69\",\n\t\t\"pressure_trend\":\"+\",\n\t\t\"dewpoint_string\":\"21
+        F (-6 C)\",\n\t\t\"dewpoint_f\":21,\n\t\t\"dewpoint_c\":-6,\n\t\t\"heat_index_string\":\"NA\",\n\t\t\"heat_index_f\":\"NA\",\n\t\t\"heat_index_c\":\"NA\",\n\t\t\"windchill_string\":\"NA\",\n\t\t\"windchill_f\":\"NA\",\n\t\t\"windchill_c\":\"NA\",\n\t\t\"feelslike_string\":\"54.1
+        F (12.3 C)\",\n\t\t\"feelslike_f\":\"54.1\",\n\t\t\"feelslike_c\":\"12.3\",\n\t\t\"visibility_mi\":\"10.0\",\n\t\t\"visibility_km\":\"16.1\",\n\t\t\"solarradiation\":\"--\",\n\t\t\"UV\":\"1\",\"precip_1hr_string\":\"0.00
+        in ( 0 mm)\",\n\t\t\"precip_1hr_in\":\"0.00\",\n\t\t\"precip_1hr_metric\":\"
+        0\",\n\t\t\"precip_today_string\":\"0.00 in (0 mm)\",\n\t\t\"precip_today_in\":\"0.00\",\n\t\t\"precip_today_metric\":\"0\",\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons-ak.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"forecast_url\":\"http://www.wunderground.com/US/MA/Mattapan.html\",\n\t\t\"history_url\":\"http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=KMABOSTO35\",\n\t\t\"ob_url\":\"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=42.343105,-71.058197\"\n\t}\n}\n"
+    http_version: 
+  recorded_at: Wed, 09 Apr 2014 22:00:15 GMT
+recorded_with: VCR 2.6.0
