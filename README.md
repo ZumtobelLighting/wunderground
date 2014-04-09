@@ -1,6 +1,6 @@
 # Wunderground
 
-TODO: Write a gem description
+A wrapper for the Weather Underground API written in ruby.
 
 ## Installation
 
