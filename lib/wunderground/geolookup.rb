@@ -5,11 +5,11 @@ require 'json'
 module Wunderground
   class Geolookup < Hash
     def latitude
-      self['lat']
+      self['lat'].to_f
     end
 
     def longitude
-      self['lon']
+      self['lon'].to_f
     end
 
     def method_missing(method, *args, &block)
@@ -31,6 +31,9 @@ module Wunderground
 
         elsif args.keys.include?(:latitude) and args.keys.include?(:longitude)
           path += "#{args[:latitude]},#{args[:longitude]}.json"
+
+        elsif args.keys.include?(:state) and args.keys.include?(:city)
+          path += "#{args[:state]}/#{args[:city].gsub(' ', '_')}.json"
         end
 
         result = connection.get(path)

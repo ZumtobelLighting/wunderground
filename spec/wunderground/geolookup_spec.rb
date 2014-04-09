@@ -1,10 +1,20 @@
 require 'spec_helper'
 
 describe Wunderground::Geolookup, :vcr do
+  it 'can get latitude, longitude from city, state' do
+    geolookup = Wunderground::Geolookup.get(
+      city: "San Francisco", 
+      state: "CA"
+    )
+
+    expect(geolookup.latitude).to eql(37.77500916)
+    expect(geolookup.longitude).to eql(-122.41825867)
+  end
+
   it 'can get latitude, longitude from zip code' do
     geolookup = Wunderground::Geolookup.get(zip: "02210")
-    expect(geolookup.latitude).to eql("42.34659958")
-    expect(geolookup.longitude).to eql("-71.04180145")
+    expect(geolookup.latitude).to eql(42.34659958)
+    expect(geolookup.longitude).to eql(-71.04180145)
   end
 
   it 'can get city, state from zip code' do
