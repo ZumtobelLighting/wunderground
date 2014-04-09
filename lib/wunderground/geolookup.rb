@@ -25,20 +25,27 @@ module Wunderground
 
         args = args.reduce({}, :merge)
         
-        if args.keys.include?(:zip) 
-          path += "#{args[:zip]}.json"
-
-        elsif args.keys.include?(:latitude) and args.keys.include?(:longitude)
-          path += "#{args[:latitude]},#{args[:longitude]}.json"
-
-        elsif args.keys.include?(:state) and args.keys.include?(:city)
+        if args.keys.include?(:state) and args.keys.include?(:city)
           path += "#{args[:state]}/#{args[:city].gsub(' ', '_')}.json"
+
+        elsif args.keys.include?(:country) and args.keys.include?(:city)
+          path += "#{args[:country].gsub(' ', '_')}/#{args[:city].gsub(' ', '_')}.json"
 
         elsif args.keys.include?(:autoip)
           path += "autoip.json"
 
+        elsif args.keys.include?(:zip) 
+          path += "#{args[:zip]}.json"
+
         elsif args.keys.include?(:airport)
           path += "#{args[:airport]}.json"
+
+        elsif args.keys.include?(:latitude) and args.keys.include?(:longitude)
+          path += "#{args[:latitude]},#{args[:longitude]}.json"
+
+        elsif args.keys.include?(:pws)
+          path += "pws:#{args[:pws]}.json"
+
         end
 
         result = connection.get(path)
