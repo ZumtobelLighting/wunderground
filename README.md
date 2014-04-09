@@ -6,15 +6,11 @@ TODO: Write a gem description
 
 Add this line to your application's Gemfile:
 
-    gem 'wunderground'
+    gem 'wunderground', git: 'git://github.com/radavis/wunderground.git'
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install wunderground
 
 ## Usage
 
