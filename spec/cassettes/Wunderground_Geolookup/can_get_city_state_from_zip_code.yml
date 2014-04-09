@@ -1,0 +1,90 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.wunderground.com/api/<WUNDERGROUND_API_KEY>/geolookup/q/33133.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache/1.3.42 (Unix) PHP/5.3.2
+      X-Creationtime:
+      - '0.078'
+      Last-Modified:
+      - Wed, 09 Apr 2014 20:54:20 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Wed, 09 Apr 2014 20:54:20 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Wed, 09 Apr 2014 20:54:20 GMT
+      Content-Length:
+      - '7450'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - DT=1397076860:7999:365-dell-c8; path=/; expires=Fri, 01-Jan-2020 00:00:00
+        GMT; domain=.wunderground.com
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"geolookup\": 1\n  }\n\t}\n\t\t,\t\"location\": {\n\t\t\"type\":\"CITY\",\n\t\t\"country\":\"US\",\n\t\t\"country_iso3166\":\"US\",\n\t\t\"country_name\":\"USA\",\n\t\t\"state\":\"FL\",\n\t\t\"city\":\"Miami\",\n\t\t\"tz_short\":\"EDT\",\n\t\t\"tz_long\":\"America/New_York\",\n\t\t\"lat\":\"25.72613907\",\n\t\t\"lon\":\"-80.23650360\",\n\t\t\"zip\":\"33133\",\n\t\t\"magic\":\"1\",\n\t\t\"wmo\":\"99999\",\n\t\t\"l\":\"/q/zmw:33133.1.99999\",\n\t\t\"requesturl\":\"US/FL/Miami.html\",\n\t\t\"wuiurl\":\"http://www.wunderground.com/US/FL/Miami.html\",\n\t\t\"nearby_weather_stations\":
+        {\n\t\t\"airport\": {\n\t\t\"station\": [\n\t\t{ \"city\":\"Miami\", \"state\":\"FL\",
+        \"country\":\"US\", \"icao\":\"KMIA\", \"lat\":\"25.78804970\", \"lon\":\"-80.31693268\"
+        }\n\t\t,{ \"city\":\"Opa Locka\", \"state\":\"FL\", \"country\":\"US\", \"icao\":\"KOPF\",
+        \"lat\":\"25.91016960\", \"lon\":\"-80.28282928\" }\n\t\t,{ \"city\":\"Kendall\",
+        \"state\":\"FL\", \"country\":\"US\", \"icao\":\"KTMB\", \"lat\":\"25.64226913\",
+        \"lon\":\"-80.43466949\" }\n\t\t,{ \"city\":\"Homestead AFB\", \"state\":\"FL\",
+        \"country\":\"US\", \"icao\":\"KHST\", \"lat\":\"25.48855019\", \"lon\":\"-80.38356781\"
+        }\n\t\t]\n\t\t}\n\t\t,\n\t\t\"pws\": {\n\t\t\"station\": [\n\t\t{\n\t\t\"neighborhood\":\"Fairchild
+        Tropical Botanic Garden\",\n\t\t\"city\":\"Coral Gables\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLMIAMI68\",\n\t\t\"lat\":25.676458,\n\t\t\"lon\":-80.276024,\n\t\t\"distance_km\":6,\n\t\t\"distance_mi\":4\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Gulliver
+        Prep\",\n\t\t\"city\":\"Pinecrest\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFPINECR2\",\n\t\t\"lat\":25.689056,\n\t\t\"lon\":-80.300217,\n\t\t\"distance_km\":7,\n\t\t\"distance_mi\":4\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Village
+        of Pinecrest\",\n\t\t\"city\":\"Village of Pinecrest / Miami\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLMIAMI43\",\n\t\t\"lat\":25.659081,\n\t\t\"lon\":-80.297218,\n\t\t\"distance_km\":9,\n\t\t\"distance_mi\":5\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Pinecrest
+        - NW\",\n\t\t\"city\":\"Pinecrest\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLPINEC3\",\n\t\t\"lat\":25.676300,\n\t\t\"lon\":-80.316101,\n\t\t\"distance_km\":9,\n\t\t\"distance_mi\":5\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"DV
+        Floral Group\",\n\t\t\"city\":\"Miami\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLMIAMI75\",\n\t\t\"lat\":25.787222,\n\t\t\"lon\":-80.347717,\n\t\t\"distance_km\":13,\n\t\t\"distance_mi\":7\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Westwood
+        Lake/Snapper Creek\",\n\t\t\"city\":\"Miami\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLMIAMI29\",\n\t\t\"lat\":25.708208,\n\t\t\"lon\":-80.374092,\n\t\t\"distance_km\":13,\n\t\t\"distance_mi\":8\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"FIU
+        MMC PG5\",\n\t\t\"city\":\"Miami\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLMIAMI88\",\n\t\t\"lat\":25.755735,\n\t\t\"lon\":-80.373993,\n\t\t\"distance_km\":14,\n\t\t\"distance_mi\":8\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"South
+        Dade / The Falls\",\n\t\t\"city\":\"Miami\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLMIAMI16\",\n\t\t\"lat\":25.640781,\n\t\t\"lon\":-80.341782,\n\t\t\"distance_km\":14,\n\t\t\"distance_mi\":8\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"APRSWXNET
+        Miami FL US\",\n\t\t\"city\":\"Miami\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"MAP491\",\n\t\t\"lat\":25.650700,\n\t\t\"lon\":-80.355103,\n\t\t\"distance_km\":14,\n\t\t\"distance_mi\":8\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Palmetto
+        Bay (1/4 west of Biscayne Bay near the Deering Estate)\",\n\t\t\"city\":\"Palmetto
+        Bay\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLMIAMI47\",\n\t\t\"lat\":25.609585,\n\t\t\"lon\":-80.314407,\n\t\t\"distance_km\":15,\n\t\t\"distance_mi\":9\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Malhotra
+        Observatory\",\n\t\t\"city\":\"Miami Beach\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLMIAMI89\",\n\t\t\"lat\":25.834688,\n\t\t\"lon\":-80.129395,\n\t\t\"distance_km\":16,\n\t\t\"distance_mi\":9\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Maimi
+        Shores\",\n\t\t\"city\":\"Miami Shores\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLMIAMI91\",\n\t\t\"lat\":25.867355,\n\t\t\"lon\":-80.174957,\n\t\t\"distance_km\":16,\n\t\t\"distance_mi\":10\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Palmetto
+        Bay - Franjo\",\n\t\t\"city\":\"Palmetto Bay\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLPALME5\",\n\t\t\"lat\":25.603365,\n\t\t\"lon\":-80.340126,\n\t\t\"distance_km\":17,\n\t\t\"distance_mi\":10\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Tamiami-Imperial
+        Lake\",\n\t\t\"city\":\"Miami\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLMIAMI83\",\n\t\t\"lat\":25.780861,\n\t\t\"lon\":-80.398392,\n\t\t\"distance_km\":17,\n\t\t\"distance_mi\":10\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Metrozoo\",\n\t\t\"city\":\"Miami\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLMIAMI90\",\n\t\t\"lat\":25.636986,\n\t\t\"lon\":-80.389236,\n\t\t\"distance_km\":18,\n\t\t\"distance_mi\":10\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"FARRBETTER\",\n\t\t\"city\":\"Miami
+        Beach\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLMIAMI60\",\n\t\t\"lat\":25.863693,\n\t\t\"lon\":-80.128693,\n\t\t\"distance_km\":18,\n\t\t\"distance_mi\":11\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Cutler
+        Bay, FL\",\n\t\t\"city\":\"Cutler Bay\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLCUTLE2\",\n\t\t\"lat\":25.585308,\n\t\t\"lon\":-80.339989,\n\t\t\"distance_km\":18,\n\t\t\"distance_mi\":11\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"MARITIME
+        \",\n\t\t\"city\":\"Key Biscayne\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"MFWYF1\",\n\t\t\"lat\":25.590000,\n\t\t\"lon\":-80.099998,\n\t\t\"distance_km\":20,\n\t\t\"distance_mi\":12\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Keystone
+        Point\",\n\t\t\"city\":\"North Miami\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLNORTH26\",\n\t\t\"lat\":25.895210,\n\t\t\"lon\":-80.155273,\n\t\t\"distance_km\":20,\n\t\t\"distance_mi\":12\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"The
+        Hammocks\",\n\t\t\"city\":\"Miami\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLMIAMI15\",\n\t\t\"lat\":25.665030,\n\t\t\"lon\":-80.439529,\n\t\t\"distance_km\":21,\n\t\t\"distance_mi\":12\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Black
+        Point SDWWTP\",\n\t\t\"city\":\"Goulds\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLGOULD2\",\n\t\t\"lat\":25.548719,\n\t\t\"lon\":-80.334152,\n\t\t\"distance_km\":22,\n\t\t\"distance_mi\":13\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"North
+        Miami Beach FIU\",\n\t\t\"city\":\"North Miami Beach\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLNORTH47\",\n\t\t\"lat\":25.910038,\n\t\t\"lon\":-80.139610,\n\t\t\"distance_km\":22,\n\t\t\"distance_mi\":13\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Interama
+        NDWWTP\",\n\t\t\"city\":\"North Miami Beach\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLNORTH37\",\n\t\t\"lat\":25.918102,\n\t\t\"lon\":-80.152756,\n\t\t\"distance_km\":22,\n\t\t\"distance_mi\":13\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Miami
+        Everglades RV Resort\",\n\t\t\"city\":\"Miami\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLMIAMI50\",\n\t\t\"lat\":25.575052,\n\t\t\"lon\":-80.451897,\n\t\t\"distance_km\":27,\n\t\t\"distance_mi\":16\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"River
+        Run\",\n\t\t\"city\":\"Miramar\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLMIRAM11\",\n\t\t\"lat\":25.981413,\n\t\t\"lon\":-80.271408,\n\t\t\"distance_km\":28,\n\t\t\"distance_mi\":17\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"ISLAND
+        DR. AREA\",\n\t\t\"city\":\"MIRAMAR\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLMIRAM3\",\n\t\t\"lat\":25.990850,\n\t\t\"lon\":-80.238258,\n\t\t\"distance_km\":29,\n\t\t\"distance_mi\":17\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"West
+        Miramar, West of 75 on Broward/Dade line\",\n\t\t\"city\":\"Miramar\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLMIRAM7\",\n\t\t\"lat\":25.958431,\n\t\t\"lon\":-80.394196,\n\t\t\"distance_km\":30,\n\t\t\"distance_mi\":18\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Hollywood
+        (City Hall area)\",\n\t\t\"city\":\"Hollywood\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLHOLLY23\",\n\t\t\"lat\":26.008770,\n\t\t\"lon\":-80.155281,\n\t\t\"distance_km\":32,\n\t\t\"distance_mi\":19\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Lido
+        Isles\",\n\t\t\"city\":\"Pembroke Pines\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLPEMBR10\",\n\t\t\"lat\":25.998503,\n\t\t\"lon\":-80.375175,\n\t\t\"distance_km\":33,\n\t\t\"distance_mi\":19\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Downtown\",\n\t\t\"city\":\"Hollywood\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLHOLLY20\",\n\t\t\"lat\":26.017279,\n\t\t\"lon\":-80.149681,\n\t\t\"distance_km\":33,\n\t\t\"distance_mi\":20\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Bali
+        at The Isles at Oasis\",\n\t\t\"city\":\"Homestead\",\n\t\t\"state\":\"FL\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KFLHOMES6\",\n\t\t\"lat\":25.472275,\n\t\t\"lon\":-80.424149,\n\t\t\"distance_km\":33,\n\t\t\"distance_mi\":20\n\t\t}\n\t\t]\n\t\t}\n\t\t}\n\t}\n}\n"
+    http_version: 
+  recorded_at: Wed, 09 Apr 2014 20:54:20 GMT
+recorded_with: VCR 2.6.0

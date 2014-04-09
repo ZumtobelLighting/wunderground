@@ -25,8 +25,12 @@ module Wunderground
         path = "#{Wunderground.base_path}/geolookup/q/"
 
         args = args.reduce({}, :merge)
+        
         if args.keys.include?(:zip) 
           path += "#{args[:zip]}.json"
+
+        elsif args.keys.include?(:latitude) and args.keys.include?(:longitude)
+          path += "#{args[:latitude]},#{args[:longitude]}.json"
         end
 
         result = connection.get(path)
