@@ -8,6 +8,10 @@ module Wunderground
       self['lon'].to_f
     end
 
+    def coordinates
+      { latitude: latitude, longitude: longitude }
+    end
+
     def method_missing(method, *args, &block)
       if self[method.to_s]
         self[method.to_s]
@@ -30,6 +34,9 @@ module Wunderground
 
         elsif args.keys.include?(:autoip)
           path += "autoip.json"
+
+        elsif args.keys.include?(:ip)
+          path += "autoip.json?geo_ip=#{args[:ip]}"
 
         elsif args.keys.include?(:zip) 
           path += "#{args[:zip]}.json"

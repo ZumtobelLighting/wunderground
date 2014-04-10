@@ -1,0 +1,84 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.wunderground.com/api/<WUNDERGROUND_API_KEY>/geolookup/q/MA/Boston.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache/1.3.42 (Unix) PHP/5.3.2
+      X-Creationtime:
+      - '0.072'
+      Last-Modified:
+      - Thu, 10 Apr 2014 13:29:46 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Thu, 10 Apr 2014 13:29:46 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Thu, 10 Apr 2014 13:29:46 GMT
+      Content-Length:
+      - '6652'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - DT=1397136586:30330:365-dell-c17; path=/; expires=Fri, 01-Jan-2020 00:00:00
+        GMT; domain=.wunderground.com
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"geolookup\": 1\n  }\n\t}\n\t\t,\t\"location\": {\n\t\t\"type\":\"CITY\",\n\t\t\"country\":\"US\",\n\t\t\"country_iso3166\":\"US\",\n\t\t\"country_name\":\"USA\",\n\t\t\"state\":\"MA\",\n\t\t\"city\":\"Boston\",\n\t\t\"tz_short\":\"EDT\",\n\t\t\"tz_long\":\"America/New_York\",\n\t\t\"lat\":\"42.37046814\",\n\t\t\"lon\":\"-71.02747345\",\n\t\t\"zip\":\"02101\",\n\t\t\"magic\":\"1\",\n\t\t\"wmo\":\"99999\",\n\t\t\"l\":\"/q/zmw:02101.1.99999\",\n\t\t\"requesturl\":\"US/MA/Boston.html\",\n\t\t\"wuiurl\":\"http://www.wunderground.com/US/MA/Boston.html\",\n\t\t\"nearby_weather_stations\":
+        {\n\t\t\"airport\": {\n\t\t\"station\": [\n\t\t{ \"city\":\"Boston\", \"state\":\"MA\",
+        \"country\":\"US\", \"icao\":\"KBOS\", \"lat\":\"42.36056900\", \"lon\":\"-71.00972748\"
+        }\n\t\t,{ \"city\":\"East Milton\", \"state\":\"MA\", \"country\":\"US\",
+        \"icao\":\"KMQE\", \"lat\":\"42.21207047\", \"lon\":\"-71.11416626\" }\n\t\t,{
+        \"city\":\"Norwood\", \"state\":\"MA\", \"country\":\"US\", \"icao\":\"KOWD\",
+        \"lat\":\"42.19123077\", \"lon\":\"-71.17326355\" }\n\t\t,{ \"city\":\"Bedford\",
+        \"state\":\"MA\", \"country\":\"US\", \"icao\":\"KBED\", \"lat\":\"42.46995163\",
+        \"lon\":\"-71.28903198\" }\n\t\t]\n\t\t}\n\t\t,\n\t\t\"pws\": {\n\t\t\"station\":
+        [\n\t\t{\n\t\t\"neighborhood\":\"South Boston\",\n\t\t\"city\":\"Boston\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMABOSTO35\",\n\t\t\"lat\":42.343105,\n\t\t\"lon\":-71.058197,\n\t\t\"distance_km\":3,\n\t\t\"distance_mi\":2\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Prattville\",\n\t\t\"city\":\"Chelsea\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMACHELS2\",\n\t\t\"lat\":42.407410,\n\t\t\"lon\":-71.035759,\n\t\t\"distance_km\":4,\n\t\t\"distance_mi\":2\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Winthrop
+        Beach\",\n\t\t\"city\":\"Winthrop\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAWINTH1\",\n\t\t\"lat\":42.377106,\n\t\t\"lon\":-70.973625,\n\t\t\"distance_km\":4,\n\t\t\"distance_mi\":2\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"MIT
+        (Green Bld Roof)\",\n\t\t\"city\":\"Cambridge\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMACAMBR9\",\n\t\t\"lat\":42.360298,\n\t\t\"lon\":-71.089401,\n\t\t\"distance_km\":5,\n\t\t\"distance_mi\":3\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"St.
+        Botolph\",\n\t\t\"city\":\"Boston\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMABOSTO31\",\n\t\t\"lat\":42.343067,\n\t\t\"lon\":-71.081604,\n\t\t\"distance_km\":5,\n\t\t\"distance_mi\":3\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Thompson
+        Island\",\n\t\t\"city\":\"Boston\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMABOSTO32\",\n\t\t\"lat\":42.317165,\n\t\t\"lon\":-71.007622,\n\t\t\"distance_km\":6,\n\t\t\"distance_mi\":3\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Central
+        Square\",\n\t\t\"city\":\"Cambridge\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMACAMBR4\",\n\t\t\"lat\":42.363300,\n\t\t\"lon\":-71.107529,\n\t\t\"distance_km\":6,\n\t\t\"distance_mi\":3\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Beacon
+        & Carlton Street\",\n\t\t\"city\":\"Brookline\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMABROOK5\",\n\t\t\"lat\":42.345982,\n\t\t\"lon\":-71.109337,\n\t\t\"distance_km\":7,\n\t\t\"distance_mi\":4\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Agassiz\",\n\t\t\"city\":\"Cambridge\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMACAMBR19\",\n\t\t\"lat\":42.383446,\n\t\t\"lon\":-71.114281,\n\t\t\"distance_km\":7,\n\t\t\"distance_mi\":4\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Albion\",\n\t\t\"city\":\"Somerville\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMASOMER9\",\n\t\t\"lat\":42.391739,\n\t\t\"lon\":-71.112427,\n\t\t\"distance_km\":7,\n\t\t\"distance_mi\":4\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Malden
+        West\",\n\t\t\"city\":\"Malden\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAMALDE3\",\n\t\t\"lat\":42.426998,\n\t\t\"lon\":-71.074997,\n\t\t\"distance_km\":7,\n\t\t\"distance_mi\":4\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"David
+        B\\u0027s Weather\",\n\t\t\"city\":\"Malden\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAMALDE5\",\n\t\t\"lat\":42.438961,\n\t\t\"lon\":-71.028564,\n\t\t\"distance_km\":7,\n\t\t\"distance_mi\":4\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"PAPA\\u0027S
+        PLACE\",\n\t\t\"city\":\"MALDEN\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAMALDE1\",\n\t\t\"lat\":42.439201,\n\t\t\"lon\":-71.051399,\n\t\t\"distance_km\":7,\n\t\t\"distance_mi\":4\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Porter
+        Square\",\n\t\t\"city\":\"Cambridge\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMACAMBR14\",\n\t\t\"lat\":42.387863,\n\t\t\"lon\":-71.124321,\n\t\t\"distance_km\":8,\n\t\t\"distance_mi\":4\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Emerson
+        St. Across from Police Station\",\n\t\t\"city\":\"Medford\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAMEDFO4\",\n\t\t\"lat\":42.415516,\n\t\t\"lon\":-71.111511,\n\t\t\"distance_km\":8,\n\t\t\"distance_mi\":5\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Near
+        Wyoming Cemetery\",\n\t\t\"city\":\"Melrose\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAMELRO3\",\n\t\t\"lat\":42.444431,\n\t\t\"lon\":-71.055328,\n\t\t\"distance_km\":8,\n\t\t\"distance_mi\":5\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"North
+        Cambridge\",\n\t\t\"city\":\"Cambridge\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMACAMBR15\",\n\t\t\"lat\":42.398701,\n\t\t\"lon\":-71.129608,\n\t\t\"distance_km\":8,\n\t\t\"distance_mi\":5\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Lawrence
+        Estates\",\n\t\t\"city\":\"Medford\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAMEDFO6\",\n\t\t\"lat\":42.424374,\n\t\t\"lon\":-71.116325,\n\t\t\"distance_km\":9,\n\t\t\"distance_mi\":5\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Upper
+        Pine Banks\",\n\t\t\"city\":\"Melrose\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAMELRO7\",\n\t\t\"lat\":42.452274,\n\t\t\"lon\":-71.063171,\n\t\t\"distance_km\":9,\n\t\t\"distance_mi\":5\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Lawrence
+        Estates Garden Society\",\n\t\t\"city\":\"Medford\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAMEDFO16\",\n\t\t\"lat\":42.426685,\n\t\t\"lon\":-71.118439,\n\t\t\"distance_km\":9,\n\t\t\"distance_mi\":5\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"East
+        Arlington\",\n\t\t\"city\":\"Arlington\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAARLIN4\",\n\t\t\"lat\":42.403801,\n\t\t\"lon\":-71.137604,\n\t\t\"distance_km\":9,\n\t\t\"distance_mi\":5\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"West
+        Medford\",\n\t\t\"city\":\"Medford\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAMEDFO14\",\n\t\t\"lat\":42.426517,\n\t\t\"lon\":-71.123611,\n\t\t\"distance_km\":10,\n\t\t\"distance_mi\":6\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Fisher
+        Hill\",\n\t\t\"city\":\"Brookline\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMABROOK7\",\n\t\t\"lat\":42.332382,\n\t\t\"lon\":-71.138641,\n\t\t\"distance_km\":10,\n\t\t\"distance_mi\":6\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Mount
+        Auburn Cemetery\",\n\t\t\"city\":\"Watertown\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAWATER3\",\n\t\t\"lat\":42.373451,\n\t\t\"lon\":-71.150314,\n\t\t\"distance_km\":10,\n\t\t\"distance_mi\":6\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"East
+        Arlington 2\",\n\t\t\"city\":\"Arlington\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAARLIN5\",\n\t\t\"lat\":42.408520,\n\t\t\"lon\":-71.141426,\n\t\t\"distance_km\":10,\n\t\t\"distance_mi\":6\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Wollaston\",\n\t\t\"city\":\"Quincy\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAQUINC11\",\n\t\t\"lat\":42.267643,\n\t\t\"lon\":-71.030800,\n\t\t\"distance_km\":11,\n\t\t\"distance_mi\":6\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"\",\n\t\t\"city\":\"(Arnold
+        Arboretum ) Roslindale\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAJAMAI4\",\n\t\t\"lat\":42.295361,\n\t\t\"lon\":-71.133606,\n\t\t\"distance_km\":12,\n\t\t\"distance_mi\":7\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Congress
+        Street\",\n\t\t\"city\":\"Lynn\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMALYNN7\",\n\t\t\"lat\":42.467400,\n\t\t\"lon\":-70.960899,\n\t\t\"distance_km\":12,\n\t\t\"distance_mi\":7\n\t\t}\n\t\t]\n\t\t}\n\t\t}\n\t}\n}\n"
+    http_version: 
+  recorded_at: Thu, 10 Apr 2014 13:29:46 GMT
+recorded_with: VCR 2.6.0

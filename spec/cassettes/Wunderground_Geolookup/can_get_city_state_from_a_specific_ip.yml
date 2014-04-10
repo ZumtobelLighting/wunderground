@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.wunderground.com/api/<WUNDERGROUND_API_KEY>/geolookup/q/autoip.json?geo_ip=8.8.8.8
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache/1.3.42 (Unix) PHP/5.3.2
+      X-Creationtime:
+      - '0.127'
+      Last-Modified:
+      - Thu, 10 Apr 2014 13:44:49 GMT
+      Nncoection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Thu, 10 Apr 2014 13:44:49 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Thu, 10 Apr 2014 13:44:49 GMT
+      Content-Length:
+      - '3509'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - DT=1397137489:2335:365-dell-a4; path=/; expires=Fri, 01-Jan-2020 00:00:00
+        GMT; domain=.wunderground.com
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"geolookup\": 1\n  }\n\t}\n\t\t,\t\"location\": {\n\t\t\"type\":\"CITY\",\n\t\t\"country\":\"US\",\n\t\t\"country_iso3166\":\"US\",\n\t\t\"country_name\":\"USA\",\n\t\t\"state\":\"KS\",\n\t\t\"city\":\"Potwin\",\n\t\t\"tz_short\":\"CDT\",\n\t\t\"tz_long\":\"America/Chicago\",\n\t\t\"lat\":\"38.000000\",\n\t\t\"lon\":\"-97.000000\",\n\t\t\"zip\":\"67123\",\n\t\t\"magic\":\"1\",\n\t\t\"wmo\":\"99999\",\n\t\t\"l\":\"/q/zmw:67123.1.99999\",\n\t\t\"requesturl\":\"US/KS/Potwin.html\",\n\t\t\"wuiurl\":\"http://www.wunderground.com/US/KS/Potwin.html\",\n\t\t\"nearby_weather_stations\":
+        {\n\t\t\"airport\": {\n\t\t\"station\": [\n\t\t{ \"city\":\"Newton\", \"state\":\"KS\",
+        \"country\":\"US\", \"icao\":\"KEWK\", \"lat\":\"38.05822754\", \"lon\":\"-97.27451324\"
+        }\n\t\t,{ \"city\":\"Wichita Jabara\", \"state\":\"KS\", \"country\":\"US\",
+        \"icao\":\"KAAO\", \"lat\":\"37.74758148\", \"lon\":\"-97.22110748\" }\n\t\t,{
+        \"city\":\"McConnell AFB\", \"state\":\"KS\", \"country\":\"US\", \"icao\":\"KIAB\",
+        \"lat\":\"37.62185287\", \"lon\":\"-97.26818848\" }\n\t\t,{ \"city\":\"Wichita\",
+        \"state\":\"KS\", \"country\":\"US\", \"icao\":\"KICT\", \"lat\":\"37.64722061\",
+        \"lon\":\"-97.42944336\" }\n\t\t]\n\t\t}\n\t\t,\n\t\t\"pws\": {\n\t\t\"station\":
+        [\n\t\t{\n\t\t\"neighborhood\":\"CookFarm\",\n\t\t\"city\":\"Whitewater\",\n\t\t\"state\":\"KS\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KKSWHITE2\",\n\t\t\"lat\":37.960407,\n\t\t\"lon\":-97.173210,\n\t\t\"distance_km\":15,\n\t\t\"distance_mi\":9\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Towanda
+        Township\",\n\t\t\"city\":\"Towanda\",\n\t\t\"state\":\"KS\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KKSTOWAN2\",\n\t\t\"lat\":37.823391,\n\t\t\"lon\":-97.003571,\n\t\t\"distance_km\":19,\n\t\t\"distance_mi\":11\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"MesoWest
+        KECHI KS US UPR\",\n\t\t\"city\":\"Wichita\",\n\t\t\"state\":\"KS\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"MUP834\",\n\t\t\"lat\":37.814739,\n\t\t\"lon\":-97.262199,\n\t\t\"distance_km\":30,\n\t\t\"distance_mi\":18\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"APRSWXNET
+        Goessel KS US\",\n\t\t\"city\":\"North Newton\",\n\t\t\"state\":\"KS\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"MAU200\",\n\t\t\"lat\":38.179668,\n\t\t\"lon\":-97.301498,\n\t\t\"distance_km\":33,\n\t\t\"distance_mi\":19\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Goessel
+        Goerzen Corner\",\n\t\t\"city\":\"Goessel\",\n\t\t\"state\":\"KS\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KKSGOESS2\",\n\t\t\"lat\":38.185532,\n\t\t\"lon\":-97.301971,\n\t\t\"distance_km\":33,\n\t\t\"distance_mi\":20\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Teal
+        Cove\",\n\t\t\"city\":\"Wichita\",\n\t\t\"state\":\"KS\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KKSWICHI42\",\n\t\t\"lat\":37.755428,\n\t\t\"lon\":-97.256561,\n\t\t\"distance_km\":35,\n\t\t\"distance_mi\":21\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Shockerville\",\n\t\t\"city\":\"Wichita\",\n\t\t\"state\":\"KS\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KKSWICHI76\",\n\t\t\"lat\":37.733246,\n\t\t\"lon\":-97.241119,\n\t\t\"distance_km\":36,\n\t\t\"distance_mi\":21\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"The
+        Highlands\",\n\t\t\"city\":\"Andover\",\n\t\t\"state\":\"KS\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KKSANDOV2\",\n\t\t\"lat\":37.675941,\n\t\t\"lon\":-97.117943,\n\t\t\"distance_km\":37,\n\t\t\"distance_mi\":22\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Peach
+        Tree\",\n\t\t\"city\":\"Eastborough\",\n\t\t\"state\":\"KS\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KKSWICHI26\",\n\t\t\"lat\":37.681648,\n\t\t\"lon\":-97.260857,\n\t\t\"distance_km\":42,\n\t\t\"distance_mi\":25\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"25th
+        PERRY Wichita\",\n\t\t\"city\":\"WICHITA\",\n\t\t\"state\":\"KS\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KKSWICHI46\",\n\t\t\"lat\":37.729347,\n\t\t\"lon\":-97.361694,\n\t\t\"distance_km\":43,\n\t\t\"distance_mi\":26\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"NE
+        of Rose Hill\",\n\t\t\"city\":\"Rose Hill\",\n\t\t\"state\":\"KS\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KKSROSEH3\",\n\t\t\"lat\":37.594093,\n\t\t\"lon\":-97.074631,\n\t\t\"distance_km\":45,\n\t\t\"distance_mi\":27\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Riverview\",\n\t\t\"city\":\"Wichita\",\n\t\t\"state\":\"KS\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KKSWICHI64\",\n\t\t\"lat\":37.780972,\n\t\t\"lon\":-97.365707,\n\t\t\"distance_km\":40,\n\t\t\"distance_mi\":24\n\t\t}\n\t\t]\n\t\t}\n\t\t}\n\t}\n}\n"
+    http_version: 
+  recorded_at: Thu, 10 Apr 2014 13:44:50 GMT
+recorded_with: VCR 2.6.0

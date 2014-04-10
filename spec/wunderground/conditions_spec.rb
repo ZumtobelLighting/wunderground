@@ -7,8 +7,8 @@ describe Wunderground::Conditions, :vcr do
       longitude: -71.04180145
     )
 
-    expect(conditions.temperature_in_f).to_not be_nil
-    expect(conditions.temperature_in_c).to_not be_nil
+    expect(conditions.temperature_in_f).to be_a(Float)
+    expect(conditions.temperature_in_c).to be_a(Float)
   end
 
   it 'can get temperature from city, state' do
@@ -17,8 +17,8 @@ describe Wunderground::Conditions, :vcr do
       state: 'MA'
     )
 
-    expect(conditions.temperature_in_f).to_not be_nil
-    expect(conditions.temperature_in_c).to_not be_nil
+    expect(conditions.temperature_in_f).to be_a(Float)
+    expect(conditions.temperature_in_c).to be_a(Float)
   end
 
   it 'can get humidity from latitude, longitude' do
