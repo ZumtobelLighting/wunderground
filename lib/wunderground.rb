@@ -1,6 +1,7 @@
 require 'json'
 require 'faraday'
 require 'wunderground/almanac'
+require 'wunderground/astronomy'
 require 'wunderground/conditions'
 require 'wunderground/geolookup'
 require 'wunderground/version'

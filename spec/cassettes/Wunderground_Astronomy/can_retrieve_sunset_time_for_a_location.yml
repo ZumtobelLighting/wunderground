@@ -1,0 +1,143 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.wunderground.com/api/<WUNDERGROUND_API_KEY>/geolookup/q/CA/San_Francisco.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache/1.3.42 (Unix) PHP/5.3.2
+      X-Creationtime:
+      - '0.131'
+      Last-Modified:
+      - Thu, 10 Apr 2014 16:53:18 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Thu, 10 Apr 2014 16:53:18 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Thu, 10 Apr 2014 16:53:18 GMT
+      Content-Length:
+      - '6994'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - DT=1397148798:13254:365-v4; path=/; expires=Fri, 01-Jan-2020 00:00:00 GMT;
+        domain=.wunderground.com
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"geolookup\": 1\n  }\n\t}\n\t\t,\t\"location\": {\n\t\t\"type\":\"CITY\",\n\t\t\"country\":\"US\",\n\t\t\"country_iso3166\":\"US\",\n\t\t\"country_name\":\"USA\",\n\t\t\"state\":\"CA\",\n\t\t\"city\":\"San
+        Francisco\",\n\t\t\"tz_short\":\"PDT\",\n\t\t\"tz_long\":\"America/Los_Angeles\",\n\t\t\"lat\":\"37.77500916\",\n\t\t\"lon\":\"-122.41825867\",\n\t\t\"zip\":\"94101\",\n\t\t\"magic\":\"1\",\n\t\t\"wmo\":\"99999\",\n\t\t\"l\":\"/q/zmw:94101.1.99999\",\n\t\t\"requesturl\":\"US/CA/San_Francisco.html\",\n\t\t\"wuiurl\":\"http://www.wunderground.com/US/CA/San_Francisco.html\",\n\t\t\"nearby_weather_stations\":
+        {\n\t\t\"airport\": {\n\t\t\"station\": [\n\t\t{ \"city\":\"San Francisco\",
+        \"state\":\"CA\", \"country\":\"US\", \"icao\":\"KSFO\", \"lat\":\"37.61960983\",
+        \"lon\":\"-122.36557770\" }\n\t\t,{ \"city\":\"Oakland\", \"state\":\"CA\",
+        \"country\":\"US\", \"icao\":\"KOAK\", \"lat\":\"37.71780014\", \"lon\":\"-122.23294067\"
+        }\n\t\t,{ \"city\":\"Hayward\", \"state\":\"CA\", \"country\":\"US\", \"icao\":\"KHWD\",
+        \"lat\":\"37.65891647\", \"lon\":\"-122.12174988\" }\n\t\t,{ \"city\":\"Half
+        Moon Bay\", \"state\":\"CA\", \"country\":\"US\", \"icao\":\"KHAF\", \"lat\":\"37.51361084\",
+        \"lon\":\"-122.49958801\" }\n\t\t]\n\t\t}\n\t\t,\n\t\t\"pws\": {\n\t\t\"station\":
+        [\n\t\t{\n\t\t\"neighborhood\":\"SOMA - Near Van Ness\",\n\t\t\"city\":\"San
+        Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KCASANFR58\",\n\t\t\"lat\":37.773285,\n\t\t\"lon\":-122.417725,\n\t\t\"distance_km\":0,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"North
+        Mission (Valencia\",\n\t\t\"city\":\"San Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KCASANFR49\",\n\t\t\"lat\":37.770599,\n\t\t\"lon\":-122.423500,\n\t\t\"distance_km\":0,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"SOMA\",\n\t\t\"city\":\"San
+        Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KCASANFR131\",\n\t\t\"lat\":37.778488,\n\t\t\"lon\":-122.408005,\n\t\t\"distance_km\":0,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Mission
+        (at Bar and Burrito)\",\n\t\t\"city\":\"San Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KCASANFR142\",\n\t\t\"lat\":37.765530,\n\t\t\"lon\":-122.422913,\n\t\t\"distance_km\":1,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"The
+        Mission, 19th and Folsom\",\n\t\t\"city\":\"San Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KCASANFR259\",\n\t\t\"lat\":37.759354,\n\t\t\"lon\":-122.415085,\n\t\t\"distance_km\":1,\n\t\t\"distance_mi\":1\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Mission
+        Bay - My weather is better than yours.\",\n\t\t\"city\":\"San Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KCASANFR53\",\n\t\t\"lat\":37.774124,\n\t\t\"lon\":-122.396362,\n\t\t\"distance_km\":1,\n\t\t\"distance_mi\":1\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Castro/San
+        Francisco\",\n\t\t\"city\":\"San Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KPCASANF2\",\n\t\t\"lat\":37.759239,\n\t\t\"lon\":-122.430420,\n\t\t\"distance_km\":2,\n\t\t\"distance_mi\":1\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"The
+        Mission: Even the weather is hip\",\n\t\t\"city\":\"San Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KCASANFR79\",\n\t\t\"lat\":37.754234,\n\t\t\"lon\":-122.411728,\n\t\t\"distance_km\":2,\n\t\t\"distance_mi\":1\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Castro/Eureka
+        Valley\",\n\t\t\"city\":\"San Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KCASANFR138\",\n\t\t\"lat\":37.758636,\n\t\t\"lon\":-122.437302,\n\t\t\"distance_km\":2,\n\t\t\"distance_mi\":1\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Drew
+        School\",\n\t\t\"city\":\"San Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KCASANFR155\",\n\t\t\"lat\":37.787407,\n\t\t\"lon\":-122.442177,\n\t\t\"distance_km\":2,\n\t\t\"distance_mi\":1\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Pacific
+        Heights\",\n\t\t\"city\":\"San Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KCASANFR166\",\n\t\t\"lat\":37.789127,\n\t\t\"lon\":-122.441307,\n\t\t\"distance_km\":2,\n\t\t\"distance_mi\":1\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Collingwood
+        Hill/Noe Valley-Castro\",\n\t\t\"city\":\"San Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KCASANFR244\",\n\t\t\"lat\":37.756218,\n\t\t\"lon\":-122.436081,\n\t\t\"distance_km\":2,\n\t\t\"distance_mi\":1\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Financial
+        District\",\n\t\t\"city\":\"San Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KCASANFR102\",\n\t\t\"lat\":37.793579,\n\t\t\"lon\":-122.399330,\n\t\t\"distance_km\":2,\n\t\t\"distance_mi\":1\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Kite
+        Hill\",\n\t\t\"city\":\"San Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KCASANFR232\",\n\t\t\"lat\":37.758877,\n\t\t\"lon\":-122.441170,\n\t\t\"distance_km\":2,\n\t\t\"distance_mi\":1\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Noe
+        Valley\",\n\t\t\"city\":\"San Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KCASANFR3\",\n\t\t\"lat\":37.753109,\n\t\t\"lon\":-122.433525,\n\t\t\"distance_km\":2,\n\t\t\"distance_mi\":1\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"little
+        house in the mission\",\n\t\t\"city\":\"San Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KCASANFR159\",\n\t\t\"lat\":37.748859,\n\t\t\"lon\":-122.409393,\n\t\t\"distance_km\":3,\n\t\t\"distance_mi\":1\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"My
+        Mission Brings All the Girls to the Yard\",\n\t\t\"city\":\"San Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KCASANFR180\",\n\t\t\"lat\":37.747826,\n\t\t\"lon\":-122.415062,\n\t\t\"distance_km\":3,\n\t\t\"distance_mi\":1\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Cole
+        Valley\",\n\t\t\"city\":\"San Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KCASANFR110\",\n\t\t\"lat\":37.760796,\n\t\t\"lon\":-122.449608,\n\t\t\"distance_km\":3,\n\t\t\"distance_mi\":1\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Upper
+        Market\",\n\t\t\"city\":\"San Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KCASANFR76\",\n\t\t\"lat\":37.754002,\n\t\t\"lon\":-122.442780,\n\t\t\"distance_km\":3,\n\t\t\"distance_mi\":1\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Telegraph
+        Hill\",\n\t\t\"city\":\"San Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KCASANFR169\",\n\t\t\"lat\":37.804367,\n\t\t\"lon\":-122.407570,\n\t\t\"distance_km\":3,\n\t\t\"distance_mi\":2\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Noe
+        Valley (South)\",\n\t\t\"city\":\"San Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KCASANFR98\",\n\t\t\"lat\":37.745663,\n\t\t\"lon\":-122.430214,\n\t\t\"distance_km\":3,\n\t\t\"distance_mi\":2\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Billy
+        Goat Hill\",\n\t\t\"city\":\"San Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KCASANFR73\",\n\t\t\"lat\":37.741833,\n\t\t\"lon\":-122.433586,\n\t\t\"distance_km\":3,\n\t\t\"distance_mi\":2\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"inner
+        sunset\",\n\t\t\"city\":\"San Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KCASANFR156\",\n\t\t\"lat\":37.764980,\n\t\t\"lon\":-122.462303,\n\t\t\"distance_km\":4,\n\t\t\"distance_mi\":2\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Presidio\",\n\t\t\"city\":\"San
+        Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KCASANFR148\",\n\t\t\"lat\":37.801765,\n\t\t\"lon\":-122.450760,\n\t\t\"distance_km\":4,\n\t\t\"distance_mi\":2\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Twin
+        Peaks\",\n\t\t\"city\":\"San Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KCASANFR34\",\n\t\t\"lat\":37.748829,\n\t\t\"lon\":-122.453499,\n\t\t\"distance_km\":4,\n\t\t\"distance_mi\":2\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Mid
+        Richmond\",\n\t\t\"city\":\"San Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KCASANFR128\",\n\t\t\"lat\":37.782398,\n\t\t\"lon\":-122.471497,\n\t\t\"distance_km\":4,\n\t\t\"distance_mi\":2\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Golden
+        Gate Heights\",\n\t\t\"city\":\"San Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KCASANFR46\",\n\t\t\"lat\":37.752174,\n\t\t\"lon\":-122.465805,\n\t\t\"distance_km\":4,\n\t\t\"distance_mi\":2\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"APRSWXNET
+        San Francisco CA US\",\n\t\t\"city\":\"San Francisco\",\n\t\t\"state\":\"CA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"MC9629\",\n\t\t\"lat\":37.735199,\n\t\t\"lon\":-122.442589,\n\t\t\"distance_km\":4,\n\t\t\"distance_mi\":2\n\t\t}\n\t\t]\n\t\t}\n\t\t}\n\t}\n}\n"
+    http_version: 
+  recorded_at: Thu, 10 Apr 2014 16:53:18 GMT
+- request:
+    method: get
+    uri: http://api.wunderground.com/api/<WUNDERGROUND_API_KEY>/astronomy/q/37.77500916,-122.41825867.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache/1.3.42 (Unix) PHP/5.3.2
+      X-Creationtime:
+      - '0.061'
+      Last-Modified:
+      - Thu, 10 Apr 2014 16:53:18 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Thu, 10 Apr 2014 16:53:19 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Thu, 10 Apr 2014 16:53:19 GMT
+      Content-Length:
+      - '558'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - DT=1397148798:5655:365-v5; path=/; expires=Fri, 01-Jan-2020 00:00:00 GMT;
+        domain=.wunderground.com
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"astronomy\": 1\n  }\n\t}\n\t\t,\t\"moon_phase\": {\n\t\t\"percentIlluminated\":\"80\",\n\t\t\"ageOfMoon\":\"10\",\n\t\t\"phaseofMoon\":\"Waxing
+        Gibbous\",\n\t\t\"hemisphere\":\"North\",\n\t\t\"current_time\": {\n\t\t\"hour\":\"9\",\n\t\t\"minute\":\"53\"\n\t\t},\n\t\t\"sunrise\":
+        {\n\t\t\"hour\":\"6\",\n\t\t\"minute\":\"41\"\n\t\t},\n\t\t\"sunset\": {\n\t\t\"hour\":\"19\",\n\t\t\"minute\":\"40\"\n\t\t}\n\t},\n\t\"sun_phase\":
+        {\n\t\t\"sunrise\": {\n\t\t\"hour\":\"6\",\n\t\t\"minute\":\"41\"\n\t\t},\n\t\t\"sunset\":
+        {\n\t\t\"hour\":\"19\",\n\t\t\"minute\":\"40\"\n\t\t}\n\t}\n}\n"
+    http_version: 
+  recorded_at: Thu, 10 Apr 2014 16:53:19 GMT
+recorded_with: VCR 2.6.0
