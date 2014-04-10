@@ -14,7 +14,7 @@ And then execute:
 
 ## Usage
 
-Define your api key in your environment: ```export wunderground_key="YOUR_API_KEY"```
+Define your api key in your environment: ```export WUNDERGROUND_API_KEY="YOUR_API_KEY"```
 
 ```
 geolookup = Wunderground::Geolookup.get(zip: 02125)  # or ip, city+state, country+city, airport, lat+lon

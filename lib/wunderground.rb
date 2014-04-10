@@ -12,9 +12,9 @@ module Wunderground
   end
 
   def self.key
-    key = ENV['wunderground_key']
+    key = ENV['WUNDERGROUND_API_KEY']
     if key.nil? or key.empty?
-      raise 'Wunderground Error: No key defined! export wunderground_key="YOUR_API_KEY"'
+      raise 'Wunderground Error: No key defined! export WUNDERGROUND_API_KEY="YOUR_API_KEY"'
     end
     key
   end
