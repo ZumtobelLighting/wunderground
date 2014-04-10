@@ -14,7 +14,6 @@ describe Wunderground::Astronomy, :vcr do
       city: 'San Francisco',
       state: 'CA'
     )
-    binding.pry
     expect(astronomy.sunset).to be_a(Hash)
   end
 
