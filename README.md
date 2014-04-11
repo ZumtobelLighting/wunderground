@@ -56,6 +56,8 @@ weather_history.observations => # array of observations
 ...
 ```
 
+[Glossary of Wunderground field names](http://www.wunderground.com/weather/api/d/docs?d=resources/phrase-glossary)
+
 ## Contributing
 
 1. Fork it
