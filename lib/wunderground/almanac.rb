@@ -1,19 +1,27 @@
 module Wunderground
   class Almanac < Hash
     def average_high_in_c 
-      self['temp_high']['normal']['C']
+      self['temp_high']['normal']['C'].to_f
     end
 
     def average_high_in_f 
-      self['temp_high']['normal']['F']
+      self['temp_high']['normal']['F'].to_f
     end
 
     def average_low_in_c 
-      self['temp_low']['normal']['C']
+      self['temp_low']['normal']['C'].to_f
     end
 
     def average_low_in_f 
-      self['temp_low']['normal']['F']
+      self['temp_low']['normal']['F'].to_f
+    end
+
+    def method_missing(method, *args, &block)
+      if self[method.to_s]
+        self[method.to_s]
+      else
+        super
+      end
     end
 
     class << self

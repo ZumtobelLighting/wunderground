@@ -7,8 +7,8 @@ describe Wunderground::Almanac, :vcr do
       longitude: -71.04180145
     )
 
-    expect(almanac.average_high_in_c).to_not be_nil
-    expect(almanac.average_low_in_c).to_not be_nil
+    expect(almanac.average_high_in_c).to be_a(Float)
+    expect(almanac.average_low_in_c).to be_a(Float)
   end
 
 end

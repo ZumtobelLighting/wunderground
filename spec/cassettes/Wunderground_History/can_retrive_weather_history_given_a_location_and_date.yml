@@ -1,0 +1,433 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.wunderground.com/api/<WUNDERGROUND_API_KEY>/geolookup/q/MA/Boston.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache/1.3.42 (Unix) PHP/5.3.2
+      X-Creationtime:
+      - '0.091'
+      Last-Modified:
+      - Fri, 11 Apr 2014 15:04:13 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Fri, 11 Apr 2014 15:04:14 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Fri, 11 Apr 2014 15:04:14 GMT
+      Content-Length:
+      - '6861'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - DT=1397228653:23334:365-e10; path=/; expires=Fri, 01-Jan-2020 00:00:00 GMT;
+        domain=.wunderground.com
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"geolookup\": 1\n  }\n\t}\n\t\t,\t\"location\": {\n\t\t\"type\":\"CITY\",\n\t\t\"country\":\"US\",\n\t\t\"country_iso3166\":\"US\",\n\t\t\"country_name\":\"USA\",\n\t\t\"state\":\"MA\",\n\t\t\"city\":\"Boston\",\n\t\t\"tz_short\":\"EDT\",\n\t\t\"tz_long\":\"America/New_York\",\n\t\t\"lat\":\"42.37046814\",\n\t\t\"lon\":\"-71.02747345\",\n\t\t\"zip\":\"02101\",\n\t\t\"magic\":\"1\",\n\t\t\"wmo\":\"99999\",\n\t\t\"l\":\"/q/zmw:02101.1.99999\",\n\t\t\"requesturl\":\"US/MA/Boston.html\",\n\t\t\"wuiurl\":\"http://www.wunderground.com/US/MA/Boston.html\",\n\t\t\"nearby_weather_stations\":
+        {\n\t\t\"airport\": {\n\t\t\"station\": [\n\t\t{ \"city\":\"Boston\", \"state\":\"MA\",
+        \"country\":\"US\", \"icao\":\"KBOS\", \"lat\":\"42.36056900\", \"lon\":\"-71.00972748\"
+        }\n\t\t,{ \"city\":\"East Milton\", \"state\":\"MA\", \"country\":\"US\",
+        \"icao\":\"KMQE\", \"lat\":\"42.21207047\", \"lon\":\"-71.11416626\" }\n\t\t,{
+        \"city\":\"Norwood\", \"state\":\"MA\", \"country\":\"US\", \"icao\":\"KOWD\",
+        \"lat\":\"42.19123077\", \"lon\":\"-71.17326355\" }\n\t\t,{ \"city\":\"Bedford\",
+        \"state\":\"MA\", \"country\":\"US\", \"icao\":\"KBED\", \"lat\":\"42.46995163\",
+        \"lon\":\"-71.28903198\" }\n\t\t]\n\t\t}\n\t\t,\n\t\t\"pws\": {\n\t\t\"station\":
+        [\n\t\t{\n\t\t\"neighborhood\":\"South Boston\",\n\t\t\"city\":\"Boston\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMABOSTO35\",\n\t\t\"lat\":42.343105,\n\t\t\"lon\":-71.058197,\n\t\t\"distance_km\":3,\n\t\t\"distance_mi\":2\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Prattville\",\n\t\t\"city\":\"Chelsea\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMACHELS2\",\n\t\t\"lat\":42.407410,\n\t\t\"lon\":-71.035759,\n\t\t\"distance_km\":4,\n\t\t\"distance_mi\":2\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Winthrop
+        Beach\",\n\t\t\"city\":\"Winthrop\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAWINTH1\",\n\t\t\"lat\":42.377106,\n\t\t\"lon\":-70.973625,\n\t\t\"distance_km\":4,\n\t\t\"distance_mi\":2\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"MIT
+        (Green Bld Roof)\",\n\t\t\"city\":\"Cambridge\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMACAMBR9\",\n\t\t\"lat\":42.360298,\n\t\t\"lon\":-71.089401,\n\t\t\"distance_km\":5,\n\t\t\"distance_mi\":3\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"St.
+        Botolph\",\n\t\t\"city\":\"Boston\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMABOSTO31\",\n\t\t\"lat\":42.343067,\n\t\t\"lon\":-71.081604,\n\t\t\"distance_km\":5,\n\t\t\"distance_mi\":3\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Thompson
+        Island\",\n\t\t\"city\":\"Boston\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMABOSTO32\",\n\t\t\"lat\":42.317165,\n\t\t\"lon\":-71.007622,\n\t\t\"distance_km\":6,\n\t\t\"distance_mi\":3\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Central
+        Square\",\n\t\t\"city\":\"Cambridge\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMACAMBR4\",\n\t\t\"lat\":42.363300,\n\t\t\"lon\":-71.107529,\n\t\t\"distance_km\":6,\n\t\t\"distance_mi\":3\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Beacon
+        & Carlton Street\",\n\t\t\"city\":\"Brookline\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMABROOK5\",\n\t\t\"lat\":42.345982,\n\t\t\"lon\":-71.109337,\n\t\t\"distance_km\":7,\n\t\t\"distance_mi\":4\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Agassiz\",\n\t\t\"city\":\"Cambridge\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMACAMBR19\",\n\t\t\"lat\":42.383446,\n\t\t\"lon\":-71.114281,\n\t\t\"distance_km\":7,\n\t\t\"distance_mi\":4\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Albion\",\n\t\t\"city\":\"Somerville\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMASOMER9\",\n\t\t\"lat\":42.391739,\n\t\t\"lon\":-71.112427,\n\t\t\"distance_km\":7,\n\t\t\"distance_mi\":4\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Malden
+        West\",\n\t\t\"city\":\"Malden\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAMALDE3\",\n\t\t\"lat\":42.426998,\n\t\t\"lon\":-71.074997,\n\t\t\"distance_km\":7,\n\t\t\"distance_mi\":4\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"David
+        B\\u0027s Weather\",\n\t\t\"city\":\"Malden\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAMALDE5\",\n\t\t\"lat\":42.438961,\n\t\t\"lon\":-71.028564,\n\t\t\"distance_km\":7,\n\t\t\"distance_mi\":4\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"PAPA\\u0027S
+        PLACE\",\n\t\t\"city\":\"MALDEN\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAMALDE1\",\n\t\t\"lat\":42.439201,\n\t\t\"lon\":-71.051399,\n\t\t\"distance_km\":7,\n\t\t\"distance_mi\":4\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Porter
+        Square\",\n\t\t\"city\":\"Cambridge\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMACAMBR14\",\n\t\t\"lat\":42.387863,\n\t\t\"lon\":-71.124321,\n\t\t\"distance_km\":8,\n\t\t\"distance_mi\":4\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Emerson
+        St. Across from Police Station\",\n\t\t\"city\":\"Medford\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAMEDFO4\",\n\t\t\"lat\":42.415516,\n\t\t\"lon\":-71.111511,\n\t\t\"distance_km\":8,\n\t\t\"distance_mi\":5\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Near
+        Wyoming Cemetery\",\n\t\t\"city\":\"Melrose\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAMELRO3\",\n\t\t\"lat\":42.444431,\n\t\t\"lon\":-71.055328,\n\t\t\"distance_km\":8,\n\t\t\"distance_mi\":5\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"North
+        Cambridge\",\n\t\t\"city\":\"Cambridge\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMACAMBR15\",\n\t\t\"lat\":42.398701,\n\t\t\"lon\":-71.129608,\n\t\t\"distance_km\":8,\n\t\t\"distance_mi\":5\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Lawrence
+        Estates\",\n\t\t\"city\":\"Medford\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAMEDFO6\",\n\t\t\"lat\":42.424374,\n\t\t\"lon\":-71.116325,\n\t\t\"distance_km\":9,\n\t\t\"distance_mi\":5\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Upper
+        Pine Banks\",\n\t\t\"city\":\"Melrose\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAMELRO7\",\n\t\t\"lat\":42.452274,\n\t\t\"lon\":-71.063171,\n\t\t\"distance_km\":9,\n\t\t\"distance_mi\":5\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Lawrence
+        Estates Garden Society\",\n\t\t\"city\":\"Medford\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAMEDFO16\",\n\t\t\"lat\":42.426685,\n\t\t\"lon\":-71.118439,\n\t\t\"distance_km\":9,\n\t\t\"distance_mi\":5\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"East
+        Arlington\",\n\t\t\"city\":\"Arlington\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAARLIN4\",\n\t\t\"lat\":42.403801,\n\t\t\"lon\":-71.137604,\n\t\t\"distance_km\":9,\n\t\t\"distance_mi\":5\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"West
+        Medford\",\n\t\t\"city\":\"Medford\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAMEDFO14\",\n\t\t\"lat\":42.426517,\n\t\t\"lon\":-71.123611,\n\t\t\"distance_km\":10,\n\t\t\"distance_mi\":6\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Fisher
+        Hill\",\n\t\t\"city\":\"Brookline\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMABROOK7\",\n\t\t\"lat\":42.332382,\n\t\t\"lon\":-71.138641,\n\t\t\"distance_km\":10,\n\t\t\"distance_mi\":6\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Mount
+        Auburn Cemetery\",\n\t\t\"city\":\"Watertown\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAWATER3\",\n\t\t\"lat\":42.373451,\n\t\t\"lon\":-71.150314,\n\t\t\"distance_km\":10,\n\t\t\"distance_mi\":6\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Jamaica
+        Plain Pondside\",\n\t\t\"city\":\"Jamaica Plain\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAJAMAI5\",\n\t\t\"lat\":42.310760,\n\t\t\"lon\":-71.120857,\n\t\t\"distance_km\":10,\n\t\t\"distance_mi\":6\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"East
+        Arlington 2\",\n\t\t\"city\":\"Arlington\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAARLIN5\",\n\t\t\"lat\":42.408520,\n\t\t\"lon\":-71.141426,\n\t\t\"distance_km\":10,\n\t\t\"distance_mi\":6\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Wollaston\",\n\t\t\"city\":\"Quincy\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAQUINC11\",\n\t\t\"lat\":42.267643,\n\t\t\"lon\":-71.030800,\n\t\t\"distance_km\":11,\n\t\t\"distance_mi\":6\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"\",\n\t\t\"city\":\"(Arnold
+        Arboretum ) Roslindale\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMAJAMAI4\",\n\t\t\"lat\":42.295361,\n\t\t\"lon\":-71.133606,\n\t\t\"distance_km\":12,\n\t\t\"distance_mi\":7\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Congress
+        Street\",\n\t\t\"city\":\"Lynn\",\n\t\t\"state\":\"MA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KMALYNN7\",\n\t\t\"lat\":42.467400,\n\t\t\"lon\":-70.960899,\n\t\t\"distance_km\":12,\n\t\t\"distance_mi\":7\n\t\t}\n\t\t]\n\t\t}\n\t\t}\n\t}\n}\n"
+    http_version: 
+  recorded_at: Fri, 11 Apr 2014 15:04:12 GMT
+- request:
+    method: get
+    uri: http://api.wunderground.com/api/<WUNDERGROUND_API_KEY>/history_20140130/q/42.37046814,-71.02747345.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache/1.3.42 (Unix) PHP/5.3.2
+      X-Creationtime:
+      - '0.640'
+      Last-Modified:
+      - Fri, 11 Apr 2014 15:04:14 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Fri, 11 Apr 2014 15:04:14 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Fri, 11 Apr 2014 15:04:14 GMT
+      Content-Length:
+      - '24340'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - DT=1397228654:17916:365-w2; path=/; expires=Fri, 01-Jan-2020 00:00:00 GMT;
+        domain=.wunderground.com
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"history\": 1\n  }\n\t}\n\t\t,\n\t\"history\": {\n\t\t\"date\":
+        {\n\t\t\"pretty\": \"January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\":
+        \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"12\",\n\t\t\"min\": \"00\",\n\t\t\"tzname\":
+        \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\": \"January
+        30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\": \"01\",\n\t\t\"mday\":
+        \"30\",\n\t\t\"hour\": \"17\",\n\t\t\"min\": \"00\",\n\t\t\"tzname\": \"UTC\"\n\t\t},\n\t\t\"observations\":
+        [\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"12:54 AM EST on January 30, 2014\",\n\t\t\"year\":
+        \"2014\",\n\t\t\"mon\": \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"00\",\n\t\t\"min\":
+        \"54\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\":
+        \"5:54 AM GMT on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\":
+        \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"05\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"-7.2\", \"tempi\":\"19.0\",\"dewptm\":\"-21.1\",
+        \"dewpti\":\"-6.0\",\"hum\":\"33\",\"wspdm\":\"16.7\", \"wspdi\":\"10.4\",\"wgustm\":\"-9999.0\",
+        \"wgusti\":\"-9999.0\",\"wdird\":\"280\",\"wdire\":\"West\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1024.0\", \"pressurei\":\"30.24\",\"windchillm\":\"-13.6\",
+        \"windchilli\":\"7.5\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KBOS 300554Z 28009KT 10SM CLR M07/M21 A3024 RMK AO2 SLP240 T10721211 11044
+        21072 51022\" },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"1:54 AM EST on
+        January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\": \"01\",\n\t\t\"mday\":
+        \"30\",\n\t\t\"hour\": \"01\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\":
+        {\n\t\t\"pretty\": \"6:54 AM GMT on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\":
+        \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"06\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"-7.8\", \"tempi\":\"18.0\",\"dewptm\":\"-20.6\",
+        \"dewpti\":\"-5.1\",\"hum\":\"36\",\"wspdm\":\"14.8\", \"wspdi\":\"9.2\",\"wgustm\":\"27.8\",
+        \"wgusti\":\"17.3\",\"wdird\":\"280\",\"wdire\":\"West\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1024.9\", \"pressurei\":\"30.27\",\"windchillm\":\"-14.0\",
+        \"windchilli\":\"6.9\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KBOS 300654Z 28008G15KT 10SM CLR M08/M21 A3027 RMK AO2 SLP249 T10781206\"
+        },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"2:54 AM EST on January 30, 2014\",\n\t\t\"year\":
+        \"2014\",\n\t\t\"mon\": \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"02\",\n\t\t\"min\":
+        \"54\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\":
+        \"7:54 AM GMT on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\":
+        \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"07\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"-7.8\", \"tempi\":\"18.0\",\"dewptm\":\"-20.0\",
+        \"dewpti\":\"-4.0\",\"hum\":\"38\",\"wspdm\":\"20.4\", \"wspdi\":\"12.7\",\"wgustm\":\"-9999.0\",
+        \"wgusti\":\"-9999.0\",\"wdird\":\"270\",\"wdire\":\"West\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1025.9\", \"pressurei\":\"30.30\",\"windchillm\":\"-15.1\",
+        \"windchilli\":\"4.8\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KBOS 300754Z 27011KT 10SM CLR M08/M20 A3030 RMK AO2 SLP259 T10781200\" },\n\t\t{\n\t\t\"date\":
+        {\n\t\t\"pretty\": \"3:54 AM EST on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\":
+        \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"03\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\":
+        \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\": \"8:54 AM
+        GMT on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\": \"01\",\n\t\t\"mday\":
+        \"30\",\n\t\t\"hour\": \"08\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\": \"UTC\"\n\t\t},\n\t\t\"tempm\":\"-8.3\",
+        \"tempi\":\"17.1\",\"dewptm\":\"-19.4\", \"dewpti\":\"-2.9\",\"hum\":\"41\",\"wspdm\":\"16.7\",
+        \"wspdi\":\"10.4\",\"wgustm\":\"-9999.0\", \"wgusti\":\"-9999.0\",\"wdird\":\"230\",\"wdire\":\"SW\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1026.9\", \"pressurei\":\"30.33\",\"windchillm\":\"-15.0\",
+        \"windchilli\":\"5.0\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KBOS 300854Z 23009KT 10SM CLR M08/M19 A3033 RMK AO2 SLP269 T10831194 53029\"
+        },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"4:54 AM EST on January 30, 2014\",\n\t\t\"year\":
+        \"2014\",\n\t\t\"mon\": \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"04\",\n\t\t\"min\":
+        \"54\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\":
+        \"9:54 AM GMT on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\":
+        \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"09\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"-8.3\", \"tempi\":\"17.1\",\"dewptm\":\"-19.4\",
+        \"dewpti\":\"-2.9\",\"hum\":\"41\",\"wspdm\":\"16.7\", \"wspdi\":\"10.4\",\"wgustm\":\"-9999.0\",
+        \"wgusti\":\"-9999.0\",\"wdird\":\"280\",\"wdire\":\"West\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1027.4\", \"pressurei\":\"30.34\",\"windchillm\":\"-15.0\",
+        \"windchilli\":\"5.0\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KBOS 300954Z 28009KT 10SM CLR M08/M19 A3034 RMK AO2 SLP274 T10831194\" },\n\t\t{\n\t\t\"date\":
+        {\n\t\t\"pretty\": \"5:54 AM EST on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\":
+        \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"05\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\":
+        \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\": \"10:54
+        AM GMT on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\": \"01\",\n\t\t\"mday\":
+        \"30\",\n\t\t\"hour\": \"10\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\": \"UTC\"\n\t\t},\n\t\t\"tempm\":\"-8.3\",
+        \"tempi\":\"17.1\",\"dewptm\":\"-18.9\", \"dewpti\":\"-2.0\",\"hum\":\"43\",\"wspdm\":\"18.5\",
+        \"wspdi\":\"11.5\",\"wgustm\":\"-9999.0\", \"wgusti\":\"-9999.0\",\"wdird\":\"260\",\"wdire\":\"West\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1028.3\", \"pressurei\":\"30.37\",\"windchillm\":\"-15.4\",
+        \"windchilli\":\"4.3\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KBOS 301054Z 26010KT 10SM CLR M08/M19 A3037 RMK AO2 SLP283 T10831189\" },\n\t\t{\n\t\t\"date\":
+        {\n\t\t\"pretty\": \"6:54 AM EST on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\":
+        \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"06\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\":
+        \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\": \"11:54
+        AM GMT on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\": \"01\",\n\t\t\"mday\":
+        \"30\",\n\t\t\"hour\": \"11\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\": \"UTC\"\n\t\t},\n\t\t\"tempm\":\"-8.3\",
+        \"tempi\":\"17.1\",\"dewptm\":\"-18.9\", \"dewpti\":\"-2.0\",\"hum\":\"43\",\"wspdm\":\"16.7\",
+        \"wspdi\":\"10.4\",\"wgustm\":\"-9999.0\", \"wgusti\":\"-9999.0\",\"wdird\":\"270\",\"wdire\":\"West\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1029.2\", \"pressurei\":\"30.40\",\"windchillm\":\"-15.0\",
+        \"windchilli\":\"5.0\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Partly Cloudy\",\"icon\":\"partlycloudy\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KBOS 301154Z 27009KT 10SM FEW200 M08/M19 A3040 RMK AO2 SLP292 FEW CU DSNT
+        NE-E T10831189 11072 21089 53022\" },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\":
+        \"7:54 AM EST on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\":
+        \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"07\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\":
+        \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\": \"12:54
+        PM GMT on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\": \"01\",\n\t\t\"mday\":
+        \"30\",\n\t\t\"hour\": \"12\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\": \"UTC\"\n\t\t},\n\t\t\"tempm\":\"-7.8\",
+        \"tempi\":\"18.0\",\"dewptm\":\"-18.9\", \"dewpti\":\"-2.0\",\"hum\":\"41\",\"wspdm\":\"18.5\",
+        \"wspdi\":\"11.5\",\"wgustm\":\"-9999.0\", \"wgusti\":\"-9999.0\",\"wdird\":\"270\",\"wdire\":\"West\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1030.1\", \"pressurei\":\"30.42\",\"windchillm\":\"-14.8\",
+        \"windchilli\":\"5.4\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Partly Cloudy\",\"icon\":\"partlycloudy\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KBOS 301254Z 27010KT 10SM FEW200 M08/M19 A3042 RMK AO2 SLP301 T10781189\"
+        },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"8:54 AM EST on January 30, 2014\",\n\t\t\"year\":
+        \"2014\",\n\t\t\"mon\": \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"08\",\n\t\t\"min\":
+        \"54\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\":
+        \"1:54 PM GMT on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\":
+        \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"13\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"-6.7\", \"tempi\":\"19.9\",\"dewptm\":\"-18.3\",
+        \"dewpti\":\"-0.9\",\"hum\":\"40\",\"wspdm\":\"18.5\", \"wspdi\":\"11.5\",\"wgustm\":\"-9999.0\",
+        \"wgusti\":\"-9999.0\",\"wdird\":\"280\",\"wdire\":\"West\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1030.7\", \"pressurei\":\"30.44\",\"windchillm\":\"-13.4\",
+        \"windchilli\":\"7.9\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KBOS 301354Z 28010KT 10SM CLR M07/M18 A3044 RMK AO2 SLP307 T10671183\" },\n\t\t{\n\t\t\"date\":
+        {\n\t\t\"pretty\": \"9:54 AM EST on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\":
+        \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"09\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\":
+        \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\": \"2:54 PM
+        GMT on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\": \"01\",\n\t\t\"mday\":
+        \"30\",\n\t\t\"hour\": \"14\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\": \"UTC\"\n\t\t},\n\t\t\"tempm\":\"-5.6\",
+        \"tempi\":\"21.9\",\"dewptm\":\"-17.8\", \"dewpti\":\"-0.0\",\"hum\":\"38\",\"wspdm\":\"14.8\",
+        \"wspdi\":\"9.2\",\"wgustm\":\"-9999.0\", \"wgusti\":\"-9999.0\",\"wdird\":\"290\",\"wdire\":\"WNW\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1030.6\", \"pressurei\":\"30.44\",\"windchillm\":\"-11.3\",
+        \"windchilli\":\"11.7\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KBOS 301454Z 29008KT 10SM CLR M06/M18 A3044 RMK AO2 SLP306 T10561178 50015\"
+        },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"10:54 AM EST on January 30,
+        2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\": \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\":
+        \"10\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\":
+        {\n\t\t\"pretty\": \"3:54 PM GMT on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\":
+        \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"15\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"-3.9\", \"tempi\":\"25.0\",\"dewptm\":\"-16.7\",
+        \"dewpti\":\"1.9\",\"hum\":\"37\",\"wspdm\":\"7.4\", \"wspdi\":\"4.6\",\"wgustm\":\"-9999.0\",
+        \"wgusti\":\"-9999.0\",\"wdird\":\"280\",\"wdire\":\"West\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1030.5\", \"pressurei\":\"30.43\",\"windchillm\":\"-7.1\",
+        \"windchilli\":\"19.3\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KBOS 301554Z 28004KT 10SM CLR M04/M17 A3044 RMK AO2 SLP305 T10391167\" },\n\t\t{\n\t\t\"date\":
+        {\n\t\t\"pretty\": \"11:54 AM EST on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\":
+        \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"11\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\":
+        \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\": \"4:54 PM
+        GMT on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\": \"01\",\n\t\t\"mday\":
+        \"30\",\n\t\t\"hour\": \"16\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\": \"UTC\"\n\t\t},\n\t\t\"tempm\":\"-2.8\",
+        \"tempi\":\"27.0\",\"dewptm\":\"-16.7\", \"dewpti\":\"1.9\",\"hum\":\"34\",\"wspdm\":\"5.6\",
+        \"wspdi\":\"3.5\",\"wgustm\":\"-9999.0\", \"wgusti\":\"-9999.0\",\"wdird\":\"280\",\"wdire\":\"West\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1029.5\", \"pressurei\":\"30.40\",\"windchillm\":\"-5.0\",
+        \"windchilli\":\"23.0\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KBOS 301654Z 28003KT 10SM CLR M03/M17 A3041 RMK AO2 SLP295 T10281167\" },\n\t\t{\n\t\t\"date\":
+        {\n\t\t\"pretty\": \"12:54 PM EST on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\":
+        \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"12\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\":
+        \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\": \"5:54 PM
+        GMT on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\": \"01\",\n\t\t\"mday\":
+        \"30\",\n\t\t\"hour\": \"17\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\": \"UTC\"\n\t\t},\n\t\t\"tempm\":\"-2.2\",
+        \"tempi\":\"28.0\",\"dewptm\":\"-16.7\", \"dewpti\":\"1.9\",\"hum\":\"33\",\"wspdm\":\"11.1\",
+        \"wspdi\":\"6.9\",\"wgustm\":\"-9999.0\", \"wgusti\":\"-9999.0\",\"wdird\":\"220\",\"wdire\":\"SW\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1028.4\", \"pressurei\":\"30.37\",\"windchillm\":\"-6.2\",
+        \"windchilli\":\"20.8\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KBOS 301754Z 22006KT 10SM CLR M02/M17 A3037 RMK AO2 SLP284 T10221167 11022
+        21089 58022\" },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"1:54 PM EST on
+        January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\": \"01\",\n\t\t\"mday\":
+        \"30\",\n\t\t\"hour\": \"13\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\":
+        {\n\t\t\"pretty\": \"6:54 PM GMT on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\":
+        \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"18\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"-1.7\", \"tempi\":\"28.9\",\"dewptm\":\"-16.7\",
+        \"dewpti\":\"1.9\",\"hum\":\"32\",\"wspdm\":\"18.5\", \"wspdi\":\"11.5\",\"wgustm\":\"-9999.0\",
+        \"wgusti\":\"-9999.0\",\"wdird\":\"240\",\"wdire\":\"WSW\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1028.0\", \"pressurei\":\"30.36\",\"windchillm\":\"-7.1\",
+        \"windchilli\":\"19.2\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KBOS 301854Z 24010KT 10SM CLR M02/M17 A3036 RMK AO2 SLP280 T10171167\" },\n\t\t{\n\t\t\"date\":
+        {\n\t\t\"pretty\": \"2:54 PM EST on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\":
+        \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"14\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\":
+        \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\": \"7:54 PM
+        GMT on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\": \"01\",\n\t\t\"mday\":
+        \"30\",\n\t\t\"hour\": \"19\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\": \"UTC\"\n\t\t},\n\t\t\"tempm\":\"-1.1\",
+        \"tempi\":\"30.0\",\"dewptm\":\"-16.1\", \"dewpti\":\"3.0\",\"hum\":\"32\",\"wspdm\":\"13.0\",
+        \"wspdi\":\"8.1\",\"wgustm\":\"-9999.0\", \"wgusti\":\"-9999.0\",\"wdird\":\"230\",\"wdire\":\"SW\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1027.7\", \"pressurei\":\"30.35\",\"windchillm\":\"-5.3\",
+        \"windchilli\":\"22.4\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KBOS 301954Z 23007KT 10SM CLR M01/M16 A3035 RMK AO2 SLP277 T10111161\" },\n\t\t{\n\t\t\"date\":
+        {\n\t\t\"pretty\": \"3:54 PM EST on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\":
+        \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"15\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\":
+        \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\": \"8:54 PM
+        GMT on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\": \"01\",\n\t\t\"mday\":
+        \"30\",\n\t\t\"hour\": \"20\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\": \"UTC\"\n\t\t},\n\t\t\"tempm\":\"-1.1\",
+        \"tempi\":\"30.0\",\"dewptm\":\"-15.6\", \"dewpti\":\"3.9\",\"hum\":\"33\",\"wspdm\":\"16.7\",
+        \"wspdi\":\"10.4\",\"wgustm\":\"-9999.0\", \"wgusti\":\"-9999.0\",\"wdird\":\"230\",\"wdire\":\"SW\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1027.2\", \"pressurei\":\"30.34\",\"windchillm\":\"-6.1\",
+        \"windchilli\":\"21.1\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KBOS 302054Z 23009KT 10SM CLR M01/M16 A3034 RMK AO2 SLP272 T10111156 58012\"
+        },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"4:54 PM EST on January 30, 2014\",\n\t\t\"year\":
+        \"2014\",\n\t\t\"mon\": \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"16\",\n\t\t\"min\":
+        \"54\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\":
+        \"9:54 PM GMT on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\":
+        \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"21\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"-2.8\", \"tempi\":\"27.0\",\"dewptm\":\"-14.4\",
+        \"dewpti\":\"6.1\",\"hum\":\"41\",\"wspdm\":\"18.5\", \"wspdi\":\"11.5\",\"wgustm\":\"-9999.0\",
+        \"wgusti\":\"-9999.0\",\"wdird\":\"190\",\"wdire\":\"South\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1026.7\", \"pressurei\":\"30.32\",\"windchillm\":\"-8.5\",
+        \"windchilli\":\"16.7\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Partly Cloudy\",\"icon\":\"partlycloudy\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KBOS 302154Z 19010KT 10SM FEW250 M03/M14 A3032 RMK AO2 SLP267 T10281144\"
+        },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"5:54 PM EST on January 30, 2014\",\n\t\t\"year\":
+        \"2014\",\n\t\t\"mon\": \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"17\",\n\t\t\"min\":
+        \"54\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\":
+        \"10:54 PM GMT on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\":
+        \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"22\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"-3.3\", \"tempi\":\"26.1\",\"dewptm\":\"-14.4\",
+        \"dewpti\":\"6.1\",\"hum\":\"43\",\"wspdm\":\"20.4\", \"wspdi\":\"12.7\",\"wgustm\":\"-9999.0\",
+        \"wgusti\":\"-9999.0\",\"wdird\":\"190\",\"wdire\":\"South\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1026.6\", \"pressurei\":\"30.32\",\"windchillm\":\"-9.4\",
+        \"windchilli\":\"15.0\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Partly Cloudy\",\"icon\":\"partlycloudy\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KBOS 302254Z 19011KT 10SM FEW250 M03/M14 A3032 RMK AO2 SLP266 T10331144\"
+        },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"6:54 PM EST on January 30, 2014\",\n\t\t\"year\":
+        \"2014\",\n\t\t\"mon\": \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"18\",\n\t\t\"min\":
+        \"54\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\":
+        \"11:54 PM GMT on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\":
+        \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"23\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"-4.4\", \"tempi\":\"24.1\",\"dewptm\":\"-13.3\",
+        \"dewpti\":\"8.1\",\"hum\":\"51\",\"wspdm\":\"18.5\", \"wspdi\":\"11.5\",\"wgustm\":\"33.3\",
+        \"wgusti\":\"20.7\",\"wdird\":\"200\",\"wdire\":\"SSW\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1026.3\", \"pressurei\":\"30.31\",\"windchillm\":\"-10.5\",
+        \"windchilli\":\"13.1\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Partly Cloudy\",\"icon\":\"partlycloudy\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KBOS 302354Z 20010G18KT 10SM FEW250 M04/M13 A3031 RMK AO2 SLP263 T10441133
+        11011 21044 56008\" },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"7:54 PM
+        EST on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\": \"01\",\n\t\t\"mday\":
+        \"30\",\n\t\t\"hour\": \"19\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\":
+        {\n\t\t\"pretty\": \"12:54 AM GMT on January 31, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\":
+        \"01\",\n\t\t\"mday\": \"31\",\n\t\t\"hour\": \"00\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"-5.0\", \"tempi\":\"23.0\",\"dewptm\":\"-12.8\",
+        \"dewpti\":\"9.0\",\"hum\":\"55\",\"wspdm\":\"18.5\", \"wspdi\":\"11.5\",\"wgustm\":\"-9999.0\",
+        \"wgusti\":\"-9999.0\",\"wdird\":\"200\",\"wdire\":\"SSW\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1025.5\", \"pressurei\":\"30.29\",\"windchillm\":\"-11.3\",
+        \"windchilli\":\"11.7\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Scattered Clouds\",\"icon\":\"partlycloudy\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KBOS 310054Z 20010KT 10SM FEW120 SCT250 M05/M13 A3029 RMK AO2 SLP255 T10501128\"
+        },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"8:54 PM EST on January 30, 2014\",\n\t\t\"year\":
+        \"2014\",\n\t\t\"mon\": \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"20\",\n\t\t\"min\":
+        \"54\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\":
+        \"1:54 AM GMT on January 31, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\":
+        \"01\",\n\t\t\"mday\": \"31\",\n\t\t\"hour\": \"01\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"-5.6\", \"tempi\":\"21.9\",\"dewptm\":\"-12.2\",
+        \"dewpti\":\"10.0\",\"hum\":\"60\",\"wspdm\":\"16.7\", \"wspdi\":\"10.4\",\"wgustm\":\"-9999.0\",
+        \"wgusti\":\"-9999.0\",\"wdird\":\"220\",\"wdire\":\"SW\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1024.9\", \"pressurei\":\"30.27\",\"windchillm\":\"-11.6\",
+        \"windchilli\":\"11.0\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Scattered Clouds\",\"icon\":\"partlycloudy\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KBOS 310154Z 22009KT 10SM FEW120 SCT250 M06/M12 A3027 RMK AO2 SLP249 T10561122\"
+        },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"9:54 PM EST on January 30, 2014\",\n\t\t\"year\":
+        \"2014\",\n\t\t\"mon\": \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"21\",\n\t\t\"min\":
+        \"54\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\":
+        \"2:54 AM GMT on January 31, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\":
+        \"01\",\n\t\t\"mday\": \"31\",\n\t\t\"hour\": \"02\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"-5.6\", \"tempi\":\"21.9\",\"dewptm\":\"-12.2\",
+        \"dewpti\":\"10.0\",\"hum\":\"60\",\"wspdm\":\"13.0\", \"wspdi\":\"8.1\",\"wgustm\":\"-9999.0\",
+        \"wgusti\":\"-9999.0\",\"wdird\":\"220\",\"wdire\":\"SW\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1024.6\", \"pressurei\":\"30.26\",\"windchillm\":\"-10.8\",
+        \"windchilli\":\"12.5\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Partly Cloudy\",\"icon\":\"partlycloudy\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KBOS 310254Z 22007KT 10SM FEW250 M06/M12 A3026 RMK AO2 SLP246 T10561122 56018\"
+        },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"10:54 PM EST on January 30,
+        2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\": \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\":
+        \"22\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\":
+        {\n\t\t\"pretty\": \"3:54 AM GMT on January 31, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\":
+        \"01\",\n\t\t\"mday\": \"31\",\n\t\t\"hour\": \"03\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"-6.1\", \"tempi\":\"21.0\",\"dewptm\":\"-11.7\",
+        \"dewpti\":\"10.9\",\"hum\":\"65\",\"wspdm\":\"16.7\", \"wspdi\":\"10.4\",\"wgustm\":\"-9999.0\",
+        \"wgusti\":\"-9999.0\",\"wdird\":\"210\",\"wdire\":\"SSW\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1023.8\", \"pressurei\":\"30.24\",\"windchillm\":\"-12.3\",
+        \"windchilli\":\"9.9\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KBOS 310354Z 21009KT 10SM CLR M06/M12 A3024 RMK AO2 SLP238 T10611117\" },\n\t\t{\n\t\t\"date\":
+        {\n\t\t\"pretty\": \"11:54 PM EST on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\":
+        \"01\",\n\t\t\"mday\": \"30\",\n\t\t\"hour\": \"23\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\":
+        \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\": \"4:54 AM
+        GMT on January 31, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\": \"01\",\n\t\t\"mday\":
+        \"31\",\n\t\t\"hour\": \"04\",\n\t\t\"min\": \"54\",\n\t\t\"tzname\": \"UTC\"\n\t\t},\n\t\t\"tempm\":\"-5.6\",
+        \"tempi\":\"21.9\",\"dewptm\":\"-11.1\", \"dewpti\":\"12.0\",\"hum\":\"66\",\"wspdm\":\"14.8\",
+        \"wspdi\":\"9.2\",\"wgustm\":\"-9999.0\", \"wgusti\":\"-9999.0\",\"wdird\":\"210\",\"wdire\":\"SSW\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1022.8\", \"pressurei\":\"30.21\",\"windchillm\":\"-11.3\",
+        \"windchilli\":\"11.7\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Partly Cloudy\",\"icon\":\"partlycloudy\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KBOS 310454Z 21008KT 10SM FEW180 M06/M11 A3021 RMK AO2 SLP228 T10561111 410111089\"
+        }\n\t\t],\n\t\t\"dailysummary\": [\n\t\t{ \"date\": {\n\t\t\"pretty\": \"12:00
+        PM EST on January 30, 2014\",\n\t\t\"year\": \"2014\",\n\t\t\"mon\": \"01\",\n\t\t\"mday\":
+        \"30\",\n\t\t\"hour\": \"12\",\n\t\t\"min\": \"00\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"snowfallm\":\"0.00\",
+        \"snowfalli\":\"0.00\",\"monthtodatesnowfallm\":\"55.37\", \"monthtodatesnowfalli\":\"21.80\",\"since1julsnowfallm\":\"85.09\",
+        \"since1julsnowfalli\":\"33.50\",\"snowdepthm\":\"\", \"snowdepthi\":\"\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"meantempm\":\"-5\",
+        \"meantempi\":\"23\",\"meandewptm\":\"-17\", \"meandewpti\":\"2\",\"meanpressurem\":\"1027\",
+        \"meanpressurei\":\"30.33\",\"meanwindspdm\":\"16\", \"meanwindspdi\":\"10\",\"meanwdire\":\"\",\"meanwdird\":\"243\",\"meanvism\":\"16\",
+        \"meanvisi\":\"10\",\"humidity\":\"\",\"maxtempm\":\"-1\", \"maxtempi\":\"30\",\"mintempm\":\"-9\",
+        \"mintempi\":\"16\",\"maxhumidity\":\"62\",\"minhumidity\":\"31\",\"maxdewptm\":\"-11\",
+        \"maxdewpti\":\"12\",\"mindewptm\":\"-21\", \"mindewpti\":\"-6\",\"maxpressurem\":\"1031\",
+        \"maxpressurei\":\"30.44\",\"minpressurem\":\"1023\", \"minpressurei\":\"30.21\",\"maxwspdm\":\"27\",
+        \"maxwspdi\":\"17\",\"minwspdm\":\"6\", \"minwspdi\":\"4\",\"maxvism\":\"16\",
+        \"maxvisi\":\"10\",\"minvism\":\"16\", \"minvisi\":\"10\",\"gdegreedays\":\"0\",\"heatingdegreedays\":\"42\",\"coolingdegreedays\":\"0\",\"precipm\":\"0.00\",
+        \"precipi\":\"0.00\",\"precipsource\":\"\",\"heatingdegreedaysnormal\":\"36\",\"monthtodateheatingdegreedays\":\"1125\",\"monthtodateheatingdegreedaysnormal\":\"1076\",\"since1sepheatingdegreedays\":\"\",\"since1sepheatingdegreedaysnormal\":\"\",\"since1julheatingdegreedays\":\"3114\",\"since1julheatingdegreedaysnormal\":\"3070\",\"coolingdegreedaysnormal\":\"0\",\"monthtodatecoolingdegreedays\":\"0\",\"monthtodatecoolingdegreedaysnormal\":\"0\",\"since1sepcoolingdegreedays\":\"\",\"since1sepcoolingdegreedaysnormal\":\"\",\"since1jancoolingdegreedays\":\"0\",\"since1jancoolingdegreedaysnormal\":\"0\"
+        }\n\t\t]\n\t}\n}\n"
+    http_version: 
+  recorded_at: Fri, 11 Apr 2014 15:04:13 GMT
+recorded_with: VCR 2.6.0

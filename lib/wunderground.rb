@@ -4,6 +4,7 @@ require 'wunderground/almanac'
 require 'wunderground/astronomy'
 require 'wunderground/conditions'
 require 'wunderground/geolookup'
+require 'wunderground/history'
 require 'wunderground/version'
 
 module Wunderground

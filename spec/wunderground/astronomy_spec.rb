@@ -6,6 +6,7 @@ describe Wunderground::Astronomy, :vcr do
       city: 'Boston',
       state: 'MA'
     )
+
     expect(astronomy.sunrise).to be_a(Hash)
   end
 
